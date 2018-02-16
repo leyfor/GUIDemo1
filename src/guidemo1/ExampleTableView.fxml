@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="guidemo1.ExampleTableViewController">
+   <children>
+      <Label layoutX="27.0" layoutY="29.0" text="TableView Object">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="590.0" layoutY="471.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed2" text="Go Back to GUI Object View" />
+      <TableView fx:id="tableView" layoutX="27.0" layoutY="67.0" prefHeight="200.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="122.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="103.0" text="Last Name" />
+            <TableColumn fx:id="birthdayColumn" prefWidth="155.0" text="Birthday" />
+        </columns>
+      </TableView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
