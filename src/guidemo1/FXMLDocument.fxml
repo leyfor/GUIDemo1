@@ -8,11 +8,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="guidemo1.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guidemo1.FXMLDocumentController">
    <children>
-      <HBox prefHeight="320.0" prefWidth="800.0">
+      <HBox prefHeight="220.0" prefWidth="800.0">
          <children>
-            <VBox prefHeight="300.0" prefWidth="200.0" spacing="10.0">
+            <VBox prefHeight="359.0" prefWidth="191.0" spacing="10.0">
                <children>
                   <Label text="CheckBox Objects">
                      <font>
@@ -46,7 +46,7 @@
                      </font>
                   </Label>
                   <ComboBox fx:id="comboBox" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" onAction="#comboBoxWasUpdated" text="Button" />
+                  <Button mnemonicParsing="false" onAction="#comboBoxWasUpdated" text="Choose Course" />
                   <Label fx:id="comboBoxLabel" text="Label" />
                </children>
                <HBox.margin>
@@ -55,6 +55,53 @@
                <padding>
                   <Insets left="5.0" />
                </padding>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="RadioButton Object">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="phpRadioButton" mnemonicParsing="false" text="PHP" />
+                  <RadioButton fx:id="javaRadioButton" mnemonicParsing="false" text="JAVA" />
+                  <RadioButton fx:id="cSharpRadioButton" mnemonicParsing="false" text="C#" />
+                  <RadioButton fx:id="CPlusPlusRadioButton" mnemonicParsing="false" text="C++" />
+                  <Button mnemonicParsing="false" onAction="#courseButtonPush" text="Choose Program" />
+                  <Label fx:id="radioButtonLabel" text="Label" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="300.0" prefHeight="220.0" prefWidth="800.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="200.0">
+               <children>
+                  <Label text="ListView Object">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="listView" prefHeight="258.0" prefWidth="198.0" />
+               </children>
+            </VBox>
+            <StackPane prefHeight="238.0" prefWidth="190.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#listViewButtonPushed" prefHeight="25.0" prefWidth="120.0" text="Selected Gear -&gt;" />
+               </children>
+            </StackPane>
+            <VBox prefHeight="250.0" prefWidth="200.0">
+               <children>
+                  <Label text="TextArea Object">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="golfTextArea" prefHeight="220.0" prefWidth="150.0" />
+               </children>
             </VBox>
          </children>
          <padding>
